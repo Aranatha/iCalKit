@@ -43,6 +43,7 @@ public enum iCal {
 
     static let dateFormatter: DateFormatter = {
         let dateFormatter = DateFormatter()
+		dateFormatter.timeZone = TimeZone(secondsFromGMT: 0)
         dateFormatter.dateFormat = "yyyyMMdd'T'HHmmss'Z'"
         return dateFormatter
     }()
